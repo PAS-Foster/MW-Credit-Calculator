@@ -9,3 +9,8 @@
 .list-item {
   float: right;
 }
+
+.percent {
+  background-color: #198754;
+  border-radius: 15px;
+}
