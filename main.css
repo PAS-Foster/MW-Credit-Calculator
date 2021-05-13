@@ -10,7 +10,42 @@
   float: right;
 }
 
-.percent {
-  background-color: #198754;
+.badge {
   border-radius: 15px;
+}
+
+.percent {
+  background-color: #0071BF;
+}
+
+.detail-good {
+  background-color: #558F00;
+}
+
+.detail-okay {
+  background-color: #FFCB20;
+  color: black;
+}
+
+.detail-poor {
+  background-color: #9D202B;
+}
+
+@media screen and (max-width: 575px) {
+  .list-group-item {
+    min-height: 50px;
+    padding: 12px 1rem;
+  }
+
+  .first {
+    position: absolute;
+    top: 3px;
+    margin-left: 10px;
+  }
+
+  .second {
+    position: absolute;
+    bottom: 3px;
+    margin-left: 10px;
+  }
 }

@@ -11,26 +11,27 @@
   </head>
   <body>
     <div id="header">
-      <h1>PSE Credit Calculator</h1>
+      <h1>Credit Calculator</h1>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col offset-xl-4 col-xl-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8 offset-1 col-10">
+        <div class="col offset-xl-4 col-xl-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8 offset-0 col-12">
           <div class="input-group mb-3">
             <span class="input-group-text" id="dollar-symbol">$</span>
             <input type="text" class="form-control" id="total" placeholder="Enter Total" aria-label="total" aria-describedby="dollar-symbol">
-            <button type="button" class="btn btn-outline-success" id="calculate-btn" onclick="calculatePayments();">Calculate</button>
+            <button type="submit" class="btn btn-outline-success" id="calculate-btn" onclick="calculatePayments();">Calculate</button>
           </div>
           <div>
             <ul class="list-group">
-              <li class="list-group-item list-group-item-primary" id="84-months">84 Months: <span class="badge percent">7.99%</span> <span class="list-item" id="84-mth-amnt">-</span></li>
-              <li class="list-group-item list-group-item-primary" id="60-months">60 Months: <span class="badge percent">6.99%</span> <span class="list-item" id="60-mth-amnt">-</span></li>
-              <li class="list-group-item list-group-item-primary" id="36-months">36 Months: <span class="badge percent">5.99%</span> <span class="list-item" id="36-mth-amnt">-</span></li>
-              <li class="list-group-item list-group-item-secondary" id="24-months">24 Months: <span class="badge percent">no int.</span> <span class="list-item" id="24-mth-amnt">-</span></li>
-              <li class="list-group-item list-group-item-secondary" id="18-months">18 Months: <span class="badge percent">no int.</span> <span class="list-item" id="18-mth-amnt">-</span></li>
-              <li class="list-group-item list-group-item-secondary" id="12-months">12 Months: <span class="badge percent">no int.</span> <span class="list-item" id="12-mth-amnt">-</span></li>
-              <li class="list-group-item list-group-item-secondary" id="6-months">6 Months: <span class="badge percent">no int.</span> <span class="list-item" id="6-mth-amnt">-</span></li>
-            </ul>
+              <li class="list-group-item list-group-item-primary" id="84-months">84 Months: <span class="badge percent first">7.99%</span> <span class="badge detail-good second">Every Day</span><span class="list-item" id="84-mth-amnt">-</span></li>
+              <li class="list-group-item list-group-item-primary" id="60-months">60 Months: <span class="badge percent first">6.99%</span> <span class="badge detail-poor second">PSE Only</span><span class="list-item" id="60-mth-amnt">-</span></li>
+              <li class="list-group-item list-group-item-primary" id="36-months">36 Months: <span class="badge percent first">5.99%</span> <span class="badge detail-poor second">PSE Only</span><span class="list-item" id="36-mth-amnt">-</span></li>
+              <li class="list-group-item list-group-item-secondary" id="24-months">24 Months: <span class="badge percent first">no int.</span> <span class="badge detail-okay second">**</span><span class="list-item" id="24-mth-amnt">-</span></li>
+              <li class="list-group-item list-group-item-secondary" id="18-months">18 Months: <span class="badge percent first">no int.</span> <span class="badge detail-okay second">**</span><span class="list-item" id="18-mth-amnt">-</span></li>
+              <li class="list-group-item list-group-item-secondary" id="12-months">12 Months: <span class="badge percent first">no int.</span> <span class="badge detail-okay second">**</span><span class="list-item" id="12-mth-amnt">-</span></li>
+              <li class="list-group-item list-group-item-secondary" id="6-months">6 Months: <span class="badge percent first">no int.</span> <span class="badge detail-good second">Every Day</span><span class="list-item" id="6-mth-amnt">-</span></li>
+            </ul><br>
+            <p><span class="badge detail-okay">** - Available during special promotions only</span></p>
           </div>
         </div>
       </div>

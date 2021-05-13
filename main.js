@@ -21,3 +21,9 @@ function interestCalculation(starting_value, annual_percent, months) {
 function easyCalculation(starting_value, payments) {
   return (starting_value / payments).toFixed(2);
 }
+
+$('#total').keyup(function(event) {
+  if (event.keyCode === 13) {
+    $('#calculate-btn').click();
+  }
+});
